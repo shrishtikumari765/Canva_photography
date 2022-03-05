@@ -1,0 +1,259 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: auto;
+}
+#logo{
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    margin: 2px 60px;
+    height: 60px ;
+    width: auto;
+    font-family: 'Righteous', cursive;
+    font-size: 1.2rem;
+    padding-top: 3px;
+    text-align: center;
+    justify-content: center;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Rowdies', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    display: block;
+    padding: 3px 10px;
+    margin: 2px 7px;
+    text-decoration: none;
+    /* border-radius: 20px; */
+    
+}
+#navbar ul li a:hover{
+    color:black;
+    border-bottom: 2px solid black;
+    
+    /* background-color: white; */
+    text-shadow: none;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 330px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url(images/photographer-gaed5d5e21_1920.jpg) no-repeat center center/cover;
+    height: 800px;
+    top: 0px;
+    left: 0px;    
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#home h1{
+    color: black;
+    text-shadow: 2px 2px 5px white;
+    text-align: center;
+    font-family: 'Rowdies', cursive;
+}
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Rowdies', cursive;
+}
+/* sevices section*/
+.services{
+    display: flex;
+    margin: 34px;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    
+    justify-content: center;
+}
+.services .box{
+    /* border: 2px solid black; */
+    box-shadow: 3px 3px 9px black;
+    padding: 30px;
+    margin: 3px 6px;
+    border-radius: 32px;
+    background-color: rgb(241, 246, 250);
+}
+.services .box{
+    font-family: 'Rowdies', cursive;
+    
+}
+.services .box img{
+    height: 200px;
+    width: auto;
+    margin: auto;
+    display: block;
+    box-shadow: 3px 3px 9px black;
+    
+}
+/* client section */
+.award-section{
+    height: 300px;
+    position: relative;
+    padding-bottom: 20px;
+    
+}
+.award-section::before{
+    content: "";
+    
+    position: absolute;
+    background:url(images/maldives-beach-wallpaper.jpg) no-repeat center center/cover;;
+    /* background-size: cover; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.award{
+    border: 2px solid rgb(204, 195, 195);
+    height: 200px;
+    width: 200px;
+    margin: 4px;
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.award img{
+    
+    height: 100px;
+    width: 100px;
+    padding: 6px 30px;
+    border-radius: 100%;
+}
+.award-item{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    
+    justify-content: center;
+    
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    }
+    /* contact section */
+.contact{
+    position: relative;
+    }
+    .contact::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        
+        background: linear-gradient(rgba(206, 189, 189, 0.7), rgba(206, 189, 189, 0.7)  ) ,url(images/roe-deer-g2b78e98e2_1920.jpg) no-repeat center center/cover;
+    }
+    .contact-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom:35px ;
+    }
+    .contact-box input{
+        width: 100%;
+        height: 30px;
+        border: none;
+        background-color: rgba(5, 16, 26, 0.11);
+
+    } 
+    
+    .contact-box textarea{
+        width: 100%;
+        padding: 0.5rem;
+        border: none;
+        background-color: rgba(5, 16, 26, 0.11);
+        font-family: 'Rowdies', cursive;
+    }
+    .contact-box label{
+        font-size: 1.3rem;
+        font-family: 'Rowdies', cursive;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        padding: 9px 20px;
+    }
+
+/* utility classes */
+.h-primary{
+    /* color: black;
+    text-shadow: 2px 2px 5px white; */
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Rowdies', cursive;
+
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Rowdies', cursive;
+}
+.center{
+    text-align: center;
+    
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0);
+    
+    margin: 17px 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    /* text-decoration: none; */
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Rowdies', cursive;
+    
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.contact-box button{
+    background-color: rgba(5, 16, 26, 0.11);    
+
+}
+.center{
+    text-align: center;
+}
